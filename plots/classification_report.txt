@@ -1,0 +1,16 @@
+Best Parameters:
+{'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 100}
+
+Accuracy: 0.779
+Recall: 0.611
+ROC-AUC: 0.826
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.87      0.84       100
+           1       0.72      0.61      0.66        54
+
+    accuracy                           0.78       154
+   macro avg       0.76      0.74      0.75       154
+weighted avg       0.77      0.78      0.77       154
