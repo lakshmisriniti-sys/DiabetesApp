@@ -28,7 +28,7 @@ if st.button("Predict"):
         "Age": Age
     }
     try:
-        response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+        response = requests.post("https://diabetesapp-n440.onrender.com/predict", json=payload)
         if response.status_code == 200:
             result = response.json()
             if result["diabetes_risk"]:
