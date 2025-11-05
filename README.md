@@ -157,13 +157,13 @@ streamlit run scripts/frontend_app.py
 ### 📷 Screenshots
 
 **1️⃣ Streamlit Input Interface**
-![App Screenshot](assets/screenshot_ui.png)
+![App Screenshot](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_api.png)
 
 **2️⃣ Prediction Result**
-![Prediction Result](assets/screenshot_result.png)
+![Prediction Result](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_result.png)
 
 **3️⃣ FastAPI Swagger Docs**
-![API Screenshot](assets/screenshot_api.png)
+![API Screenshot](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_ui.png)
 ### 🌐 Live Demo
 
 - 🔗 **Streamlit Frontend:** [https://diabetesapp-4fnvao7vlr453axebukzjj.streamlit.app/](https://diabetesapp-4fnvao7vlr453axebukzjj.streamlit.app/)
