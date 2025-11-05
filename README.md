@@ -10,19 +10,19 @@ This project aims to assist in early detection by predicting diabetes risk using
 
 Users can input their health details in a simple Streamlit UI and get instant predictions powered by three trained algorithms — Random Forest, Logistic Regression, and Support Vector Machine (SVM).
 
-🚀 Features
+ Features
 
-🧠 Prediction using three ML models — Random Forest, Logistic Regression, and SVM
+ Prediction using three ML models — Random Forest, Logistic Regression, and SVM
 
-⚙️ Fast and scalable FastAPI backend
+ Fast and scalable FastAPI backend
 
-💻 Streamlit frontend for intuitive user input
+ Streamlit frontend for intuitive user input
 
-📊 Real-time model performance comparison
+ Real-time model performance comparison
 
-🔒 Validates inputs for realistic health ranges
+ Validates inputs for realistic health ranges
 
-🧾 Clean, minimal user interface
+ Clean, minimal user interface
 
 🧰 Tech Stack
 Layer	Tools Used
@@ -65,7 +65,7 @@ Confusion Matrix:
 ROC-AUC: 0.8104
 
 
-✅ The application currently uses the Random Forest Classifier for prediction as it achieved the highest ROC-AUC (0.83) and most balanced recall.
+ The application currently uses the Random Forest Classifier for prediction as it achieved the highest ROC-AUC (0.83) and most balanced recall.
 
 🧪 Dataset Information
 
@@ -95,93 +95,83 @@ Diabetes Pedigree Function
 
 Age
 
-⚙️ Project Structure
-DiabetesApp/
-│
-├── backend/
-│   ├── main.py                 # FastAPI backend app
-│   ├── model.pkl               # Saved trained model
-│
-├── scripts/
-│   ├── frontend_app.py         # Streamlit frontend app
-│
-├── notebooks/
-│   ├── model_training.ipynb    # Model training and evaluation
-│
-├── requirements.txt
-├── README.md                   # Project documentation
-└── .gitignore
+How to Run the Project
 
-🧩 How It Works
+This project includes three main components — model training, frontend (Streamlit app), and backend (FastAPI with Swagger UI).
+Follow the steps below based on what you want to run.
 
-User Input:
-Users enter health parameters in the Streamlit form.
+1.  Train the Model
 
-Backend Processing:
-Streamlit sends the data to FastAPI via a POST request.
+To train or retrain the diabetes prediction model:
 
-Model Prediction:
-The backend loads the trained model (model.pkl) and predicts the outcome.
+.\venv\Scripts\Activate
+python scripts/train_model.py
 
-Result Display:
-Streamlit displays whether the user is “Diabetic” or “Non-Diabetic”, along with prediction confidence.
+2.  Launch the Frontend (Streamlit)
 
-🧰 Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/DiabetesApp.git
-cd DiabetesApp
+To start the user interface:
 
-2️⃣ Create a Virtual Environment
-python -m venv venv
+.\venv\Scripts\Activate
+streamlit run scripts/frontend_app.py
 
 
-Activate it:
+This will open the web app in your default browser where you can interact with the model.
 
-# Windows
-venv\Scripts\activate
+3.  Access the Backend and Swagger UI
 
-# macOS/Linux
-source venv/bin/activate
+To load the trained model and access the API documentation:
 
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-
-4️⃣ Run the Backend (FastAPI)
+.\backend\venv\Scripts\Activate.ps1
 uvicorn backend.main:app --reload
 
 
-Visit Swagger UI 👉 http://127.0.0.1:8000/docs
+Once running, open your browser and go to:
 
-5️⃣ Run the Frontend (Streamlit)
-streamlit run scripts/frontend_app.py
-### 📷 Screenshots
+http://127.0.0.1:8000/docs
 
-**1️⃣ Streamlit Input Interface**
+
+to access the Swagger UI and test the API endpoints.
+
+ Notes
+
+Make sure all dependencies are installed using:
+
+pip install -r requirements.txt
+
+
+Python 3.9+ is recommended.
+
+The model, app, and API should be run from their respective virtual environments.
+
+
+### Screenshots
+
+1. Streamlit Input Interface**
 ![App Screenshot](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_api.png)
 
-**2️⃣ Prediction Result**
+2. Prediction Result**
 ![Prediction Result](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_result.png)
 
-**3️⃣ FastAPI Swagger Docs**
+3. FastAPI Swagger Docs**
 ![API Screenshot](https://github.com/lakshmisriniti-sys/DiabetesApp/blob/main/assest/screenshot_ui.png)
-### 🌐 Live Demo
+###  Live Demo
 
 - 🔗 **Streamlit Frontend:** [https://diabetesapp-4fnvao7vlr453axebukzjj.streamlit.app/](https://diabetesapp-4fnvao7vlr453axebukzjj.streamlit.app/)
 
 - 🔗 **FastAPI Backend (Render):** [https://diabetesapp-n440.onrender.com/docs](https://diabetesapp-n440.onrender.com/predict/docs)
-🏆 Future Enhancements
+   Future Enhancements
 
-📊 Add a graph comparing different model performances
+ Add a graph comparing different model performances
 
-💾 Store patient history and predictions in a database
+ Store patient history and predictions in a database
 
-📱 Mobile-friendly interface
+ Mobile-friendly interface
 
-☁️ Deploy the app for public access
+ Deploy the app for public access
 
-🧬 Integrate real-time health monitoring features
+ Integrate real-time health monitoring features
 
-👩‍💻 Developer
+ Developer
 
 Lakshmi Sriniti
 📍 Cambridge, UK
@@ -189,14 +179,7 @@ Lakshmi Sriniti
 
 📧 Email: lakshmisriniti@gmail.com
 
-⚖️ License
 
-This project is licensed under the MIT License
-.
-
-💡 Acknowledgements
-
-Dataset by NIDDK (National Institute of Diabetes and Digestive and Kidney Diseases)
 
 Built as part of AI & Machine Learning practice project
 
